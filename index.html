@@ -8,9 +8,10 @@
 <body>
     <h1>Upload da Linezinha</h1>
     <form method="post" enctype="multipart/form-data">
-       <p>{{form.hidden_tag()}}
+       {{form.hidden_tag()}}
+         <button type="submit" onclick="form.file()">Aperte</button>  
         {{form.file()}}
-        {{form.submit()}}</p> 
+        {{form.submit()}}
     </form>
 </body>
 </html>
